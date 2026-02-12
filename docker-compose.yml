@@ -17,6 +17,8 @@ services:
 
   n8n:
     image: n8nio/n8n:2.7.3
+    ports:
+      - 3001:5678
     restart: unless-stopped
     environment:
       # Configuration PostgreSQL
