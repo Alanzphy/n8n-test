@@ -41,7 +41,7 @@ services:
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       - N8N_SECURE_COOKIE=false
       - N8N_PROXY_HOPS=2
-      - N8N_PUSH_BACKEND=websocket
+      - N8N_PUSH_BACKEND=sse
 
     volumes:
       - n8n_data:/home/node/.n8n
